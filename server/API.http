@@ -1,0 +1,32 @@
+GET http://localhost:3001/api/tickets HTTP/1.1
+###
+
+POST http://localhost:3001/api/session HTTP/1.1
+Content-Type: application/json 
+
+    {
+    "username": "filippocarano@gmail.com",
+    "password": "password"
+    }
+
+###
+GET http://localhost:3001/api/auth-token HTTP/1.1
+
+###
+GET http://localhost:3001/api/tickets/3/textblocks HTTP/1.1
+
+
+###
+
+POST http://localhost:3001/api/new-ticket HTTP/1.1
+
+Content-Type: application/json 
+
+    {
+    "Cookie": "connect.sid=s%3Ax_pH7Dba2a4SZCmqD6XIxEPj6Xsx0CS2.I1k%2Bma9ZIY2%2BbQwKwtOzSwGyjfD9b66Ii%2BF7p0Ij85I",
+    "id": "16",
+    "state": "open",
+    "category": "inquiry",
+    "ownerId": "1",
+    "title": "test",
+    }
